@@ -1,0 +1,86 @@
+.tasks {
+	width: 100%;
+	max-width: 736px;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 91px;
+}
+
+.header div {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: var(--blue);
+}
+
+span {
+	padding: 2px 8px;
+	background: #333333;
+	border-radius: 10px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	color: #d9d9d9;
+}
+
+.textPurple {
+	color: var(--purple);
+}
+
+.list {
+	margin-top: 25px;
+}
+
+.empty {
+	margin-top: 90px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.empty img {
+	width: 55px;
+}
+
+.empty p {
+	margin-top: 10px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #808080;
+}
+.empty p:nth-child(3) {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.taskItemEnter {
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.taskItemEnterActive {
+	opacity: 1;
+	transform: translateY(0);
+	transition: opacity 300ms, transform 300ms;
+}
+
+.taskItemExit {
+	opacity: 1;
+}
+
+.taskItemExitActive {
+	opacity: 0;
+	transition: opacity 300ms;
+}

@@ -1,0 +1,47 @@
+.header {
+	padding: 72px 20px 80px;
+	display: flex;
+	background: #0d0d0d;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.newTodo {
+	position: absolute;
+	top: 173px;
+	display: flex;
+	max-width: 736px;
+	width: 100%;
+	gap: 24px;
+}
+
+.newTodo input {
+	background: #262626;
+	padding: 16px;
+	border: 1px solid #0d0d0d;
+	border-radius: 8px;
+	font-size: 16px;
+	line-height: 140%;
+	color: #808080;
+	width: 100%;
+}
+
+.btnAdd {
+	padding: 16px;
+	background: var(--blue-dark);
+	border-radius: 8px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 140%;
+	color: #f2f2f2;
+	border: none;
+	gap: 8px;
+	display: flex;
+	align-items: center;
+	transition: background 0.3s ease-in-out;
+}
+
+.btnAdd:hover {
+	background: var(--blue);
+}
